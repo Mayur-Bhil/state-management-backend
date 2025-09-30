@@ -1,5 +1,5 @@
-import { gameManager } from "./store"
+import { PubSubManager } from "./PubsubManaegr"
 
 setInterval(()=>{
-    gameManager.addGame(Math.random().toString())
-},5000)  
+    PubSubManager.getInstance().userSubscribe("1","Apple")
+},5000) 
